@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Interactive Computing Assignment 3</title>
+		<meta charset="utf-8">
+		
+		<!-- import the ProcessingJS library -->
+		<script src="processing.js" type="text/javascript"></script>
+
+		<!-- import the MinimJS library -->
+		<script src="minim.js" type="text/javascript"></script>		
+	</head>
+	
+	<body>
+		<h1>Assignment 3</h1>
+		
+		<p>For this assignment I decided to build off of my <a href="../asgn02/">previous game</a>. <a href="#game">(jump to game)</a></p>
+		
+		<p>I retained all the features of the previous game and added some new ones.</p>
+		
+		<p>Here is a list of new features added:
+		<ol>
+		<li>Pause Menu which shows directions for playing the game and allows you to select a difficulty level (with its own background)</li>
+		<li>An Easy and a Hard level. The level changes the types of barriers and the speed of the player</li>
+		<li>Background music which loops in the background</li>
+		<li>Barriers in the game. (The easy level barriers are a little easier to avoid than the hard level barriers)</li>
+		<li>Hitting a barrier triggers a "boing" noise</li>
+		<li>Made use of methods to keep code more organized. The draw function just has a few simple method calls and all the logic is contained in those methods.</li>
+		</ol>
+		
+		With these modifications in place the game was more interesting to play and felt more like my own. Here is the finished game:
+		</p>
+		
+		<a id="game" />
+		<!-- add a canvas tag that references your sketch -->
+		<canvas data-processing-sources="interactive_hw3.pde"></canvas>
+		
+		<p>This week we also had a chance to play with a MakeyMakey board and create a potential controller for our game. My group created arrow keys out of aluminium foil and used Play-doh to secure it down to a piece of paper. 
+			The user would wear an aluminium bracelet and be able to push down on the "buttons". This created a directional pad which allows a character (such as the one in the above game) to be controlled simply by touching these aluminium keys.
+				Here are some pictures of the finished controller:</p>
+		<a href="IMG955359.jpg" target="_blank"><img src="IMG955359.jpg" width="150"/></a>
+		<a href="IMG955360.jpg" target="_blank"><img src="IMG955360.jpg" width="150"/></a>
+		<a href="IMG955361.jpg" target="_blank"><img src="IMG955361.jpg" width="150"/></a>
+		<a href="IMG955363.jpg" target="_blank"><img src="IMG955363.jpg" width="150"/></a>	
+		<a href="IMG955364.jpg" target="_blank"><img src="IMG955364.jpg" width="150"/></a>
+		<a href="IMG955365.jpg" target="_blank"><img src="IMG955365.jpg" width="150"/></a>	
+		<a href="2015-09-23 13.29.21.jpg" target="_blank"><img src="2015-09-23 13.29.21.jpg" width="150"/></a>
+		<a href="2015-09-23 13.29.29.jpg" target="_blank"><img src="2015-09-23 13.29.29.jpg" width="150"/></a>
+		<a href="2015-09-23 13.29.42.jpg" target="_blank"><img src="2015-09-23 13.29.42.jpg" width="150"/></a>
+		<a href="2015-09-23 13.31.13.jpg" target="_blank"><img src="2015-09-23 13.31.13.jpg" width="150"/></a>		
+		
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Interactive Computing Portfolio</title>
+
+		<!-- ProcessingJS library-->
+		<script src="processing.js" type="text/javascript"></script>
+
+	</head>
+	<body>
+		<h1>Assignment #2</h1>
+		
+		<p>The simple chase game I made draws inspiration from Angry Birds but in this case rather than flinging a bird at a pig you need to chase and catch the pig. <a href="#game">(jump to game)</a></p>
+		
+		<p>The game has 4 different starting positions for the player, top, bottom, left and right. The computer player always starts in the middle. The point system is very simple, if the player catches the computer the player gets a point, if the computer escapes the computer gets a point.</p>
+		
+		<p>The player controls their character using the WASD keys. The algorithm for the computer is very simple. The computer just looks at the position of the player on both the X and Y axis and moves in the direction away from the player on each axis. When the computer either escapes or is caught the game resets to the starting positions for the next round.</p>
+		
+		<p> With all this implemented I had a basic game set up. It looked like this: </P>
+		<img src="game_before.png" />
+		
+		<p>Upon playing the game a little I decided that I could make it more interesting. I made the following modifications:
+		<ol>
+		<li>Added a background</li>
+		<li>Added the ability for the player to push multiple keys at once and thus move the character diagonally</li>
+		<li>Made the player's character face in the direction it is moving (left or right) </li>
+		<li>Made the computer player randomly select a different character every time the game resets (there are 3 different possibilities)</p>
+		</ol>
+		
+		With these modifications in place the game was more interesting to play and felt more like my own. Here is the finished game:
+		</p>
+
+		<a id="game" />
+		<!-- this line loads your PDE file into a "canvas" element -->
+		<!-- and asks ProcessingJS to render your code -->		
+		<canvas id="assignment02" data-processing-sources="interactive_hw2.pde"></canvas>
+		
+	</body>
+</html>

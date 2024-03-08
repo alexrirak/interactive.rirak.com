@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Interactive Computing Final Project Update</title>
+		<meta charset="utf-8">
+		
+		<!-- import the ProcessingJS library -->
+		<script src="processing.js" type="text/javascript"></script>
+
+		<!-- import the MinimJS library -->
+		<script src="minim.js" type="text/javascript"></script>		
+	</head>
+	
+	<body>
+		<h1>Final Project Update 4</h1>
+		
+		<p>We have made good progress on the project and are getting close to being finished. Since the last update we have made the tile selection menu work so that
+			the tiles can actually be placed into the level creator. A save system has bee implemented and on game start the user is able to select which level they 
+			would like to play. This is accomplished using file IO. Additionally the game has been made more generic to support more features. The "?" black has been
+			reworked to be more dynamic and to make the coin and mushroom easy to distinguish. There is also a castle at the end of created levels and when the game
+			is actually played it is able to run the game end sequence making the custom levels "win-able". There has also been another breakable block added.</p>
+			
+		<p>Mostly all that remains is ironing out some bugs and creating the physical controller. This will require remapping some of the keys we are using in the 
+		level creator but should not be too hard overall.
+		
+		<p>Here is the work in progress (takes a few seconds to load): 
+		<small>(not fully functional on web)</small></p>
+		
+		
+		<a id="game" />
+		<!-- add a canvas tag that references your sketch -->
+		<canvas data-processing-sources="midterm.pde"></canvas>
+
+		
+	</body>
+</html>

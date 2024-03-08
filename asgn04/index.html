@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Interactive Computing Assignment 4</title>
+		<meta charset="utf-8">
+		
+		<!-- import the ProcessingJS library -->
+		<script src="processing.js" type="text/javascript"></script>
+
+		<!-- import the MinimJS library -->
+		<script src="minim.js" type="text/javascript"></script>		
+	</head>
+	
+	<body>
+		<h1>Assignment 4</h1>
+		
+		<p>This assignment was to create a version of the classic Whack-A-Mole game. 
+		I decided to stay with my Angry Birds theme. The interesting thing about this 
+		assignment is that it was done using object oriented programming. The "mole" 
+		(in this case a pig) was written as a class and then multiple instances 
+		(9 to be exact) of that class were created. Each "mole" keeps track of its
+		own state and position. The main program just keeps track of the score.</p>
+		
+		<p>Here are some extras i added to make the game more interesting:</p>
+		<ol>
+		<li>Directions (and title) displayed at the top</li>
+		<li>Sounds when a pig is hit</li>
+		<li>King Pig which gives 5 points instead of 1 for being hit</li>
+		<li>Bird which subtracts 5 points if its hit</li>
+		<li>Hitting the bird triggers a different sound</li>
+		<li>The hammer has a down effect when the mouse is pressed</li>
+		</ol>
+		
+		<p>Here is the finished game: </p>
+		
+		<a id="game" />
+		<!-- add a canvas tag that references your sketch -->
+		<canvas data-processing-sources="interactive_hw4.pde"></canvas>
+
+		
+	</body>
+</html>
